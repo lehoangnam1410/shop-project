@@ -13,9 +13,9 @@ export default function Follow() {
                         <img src="./img-product12.jpg" className="w-[150px] h-[150px]"></img>
                     </div>
                 </div>
-                <div className="w-[75%] mx-auto text-center ">
+                <div className="w-[75%] mx-auto text-center  ">
                     <h1 className="flex justify-center items-center">Or subscribe to the newsletter</h1>
-                    <form className="flex items-center gap-4 justify-center mt-[30px]">
+                    <form className="flex items-center gap-4 justify-center mt-[30px] pb-[50px]">
                         <div className="border-b-2 border-[#232323] bg-transparent flex items-center w-full max-w-[400px]">
                             <input
                                 type="text"

@@ -68,15 +68,15 @@ export default function BestSeller() {
         <div className="w-[75%] max-w-[1440px] mx-auto my-16">
             {/* Title */}
             <h2 className="text-4xl font-bold text-center mb-12">Best Seller</h2>
-            <div className="mb-[20px] flex jutif">
+            <div className="mb-[20px] flex justify-between items-center">
                 <ul className="flex gap-[20px]">
                     <li>All products</li>
                     <li>T-Shirt</li>
                     <li>Hoodles</li>
                     <li>jackets</li>
                 </ul>
-                <div>
-
+               <div className="bg-[#1E2832] px-4 py-2 text-[10px] text-[#fff] w-[80px] h-[30px] flex justify-center items-center cursor-pointer">
+                    Show all
                 </div>
             </div>
             {/* Product Grid */}

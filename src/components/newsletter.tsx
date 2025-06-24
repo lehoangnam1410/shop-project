@@ -77,7 +77,7 @@ export default function Newsletter() {
                     <li>Jackets</li>
                 </ul>
                 <div className="bg-[#1E2832] px-4 py-2 text-[10px] text-[#fff] w-[80px] h-[30px] flex justify-center items-center cursor-pointer">
-                    filter
+                    Filter
                 </div>
             </div>
             {/* Product Grid */}

@@ -5,11 +5,11 @@ export default function Footer() {
         <>
             <div className="w-[75%] mx-auto mt-[50px] mb-[50px] grid grid-cols-4 gap-[20px]">
                 <div>
-                    <h1 className="text-[#1E2832BF]">CORAL</h1>
+                    <h1>CORAL</h1>
                     <div className="text-[#1E2832BF]">Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua</div>
-                    <div className="flex gap-4 mt-4">
+                    <div className="flex gap-[10px] mt-[20px]">
                         <FaFacebookF size={22} />
                         <FaTwitter size={22} />
                         <FaLinkedinIn size={22} />
