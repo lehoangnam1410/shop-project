@@ -1,7 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Reset default styles for ul and li */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
 .vertical-rl {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-  }
+}

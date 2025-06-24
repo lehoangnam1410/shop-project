@@ -1,71 +1,86 @@
 const cartItems = [
     {
         id: 1,
-        name: "Product 1",
-        category: "Category 1",
-        price: 100,
+        name: "Adicolor Classics Joggers",
+        category: "Dress",
+        price: 63.85,
         image: "img-product1.jpg",
-        badge: "SALE"
+        badge: null
     },
     {
         id: 2,
-        name: "Product 2",
-        category: "Category 2",
-        price: 150,
+        name: "Nike Sportswear Futura Luxe",
+        category: "Bag",
+        price: 130.00,
         image: "img-product2.jpg",
         badge: null
     },
     {
         id: 3,
-        name: "Product 3",
-        category: "Category 3",
-        price: 200,
+        name: "Geometric Print Scarf",
+        category: "Scarf",
+        price: 53.00,
         image: "img-product3.jpg",
-        badge: "NEW"
-    },
-    {
-        id: 4,
-        name: "Product 4",
-        category: "Category 4",
-        price: 250,
-        image: "img-product4.jpg",
-        badge: null
     },
     {
         id: 5,
-        name: "Product 5",
-        category: "Category 5",
-        price: 300,
+        name: "Basic Dress Green",
+        category: "Dress",
+        price: 236.00,
         image: "img-product5.jpg",
-        badge: "SALE"
     }
 ]
+
 interface Product {
     id: number;
     name: string;
     category: string;
     price: number;
     image: string;
-    badge: string | null;
 }
+
 const CartItem = ({ product }: { product: Product }) => {
     return (
-        <div>
-            <img src={product.image} alt=""  className="w-full object-cover"/>
-            <div>
-                <div>{product.name}</div>
-                <div className="flex justify-between">
-                    <div>{product.category}</div>
-                    <div>{product.price}</div>
+        <div className="group cursor-pointer">
+            <div className="relative mb-4 bg-[#F6F6F6]">
+                <img 
+                    src={product.image} 
+                    alt={product.name} 
+                    className="w-full"
+                />
+            </div>
+            <div className="space-y-2">
+                <div className="font-normal text-[12px]">{product.name}</div>
+                <div className="flex justify-between items-center">
+                    <p className="text-sm text-[#777777]">{product.category}</p>
+                    <div className="text-sm">
+                        <span className='text-[#FF3333]'>
+                            ${product.price.toFixed(2)}
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
+
 export default function Newsletter() {
     return (
-        <div className="w-[75%] max-w-[1440px] mx-auto">
-            <h1 className="text-center">Or subscribe to the newsletter</h1>
+        <div className="w-[75%] max-w-[1440px] mx-auto my-16">
+            {/* Title */}
+            <h2 className="text-4xl font-bold text-center mb-12">Or Subscribe To The Newsletter</h2>
+            <div className="mb-[20px]">
+                <ul className="flex gap-[20px]">
+                    <li>All products</li>
+                    <li>T-Shirt</li>
+                    <li>Hoodles</li>
+                    <li>jackets</li>
+                </ul>
+                <div>
+                    
+                </div>
+            </div>
+            {/* Product Grid */}
             <div className="grid grid-cols-4 gap-[20px]">
                 {cartItems.map((product) => (
                     <CartItem key={product.id} product={product} />
