@@ -4,6 +4,7 @@ import Header from './components/header'
 import HotCategory from './components/hot-category'
 import Logobar from './components/logobar'
 import Newsletter from './components/newsletter'
+import SeeCollection from './components/see-collection'
 import './index.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Logobar />
       <HotCategory />
       <Newsletter />
+      <SeeCollection />
     </>
   )
 }
