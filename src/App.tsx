@@ -1,23 +1,21 @@
 import './App.css'
-import './index.css'
-import Header from './components/header'
 import Banner from './components/banner'
-import ProductList from './components/product-list'
-import ProductShowcase from './components/product-showcase'
-import Newsletter from './components/newsletter'
-import HeroSection from './components/herosection'
+import Header from './components/header'
 import Logobar from './components/logobar'
+import Newsletter from './components/newsletter'
+import ProductList from './components/product-list'
+import HotCategory from './components/hot-category'
+import './index.css'
 
 function App() {
 
   return (
     <>
       <Header />
-      <HeroSection />
       <Banner />
       <Logobar />
+      <HotCategory />
       <ProductList />
-      <ProductShowcase />
       <Newsletter />
     </>
   )
