@@ -3,7 +3,7 @@ export default function Follow() {
         <>
             <div className="bg-[#1E28320D]">
                 <div className="w-[75%] mx-auto mt-[50px] mb-[50px]">
-                    <h1 className="flex justify-center items-center">Follow products and discounts on Instagram</h1>
+                    <h1 className="flex justify-center items-center pt-[30px]">Follow products and discounts on Instagram</h1>
                     <div className="flex justify-between items-center mt-[30px] gap-[20px]">
                         <img src="./img-product12.jpg" className="w-[150px] h-[150px]"></img>
                         <img src="./img-product12.jpg" className="w-[150px] h-[150px]"></img>
