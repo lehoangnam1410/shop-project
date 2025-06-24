@@ -63,21 +63,20 @@ const CartItem = ({ product }: { product: Product }) => {
         </div>
     )
 }
-
-export default function Newsletter() {
+export default function BestSeller() {
     return (
         <div className="w-[75%] max-w-[1440px] mx-auto my-16">
             {/* Title */}
-            <h2 className="text-4xl font-bold text-center mb-12">Or Subscribe To The Newsletter</h2>
-            <div className="mb-[20px] flex justify-between items-center">
+            <h2 className="text-4xl font-bold text-center mb-12">Best Seller</h2>
+            <div className="mb-[20px] flex jutif">
                 <ul className="flex gap-[20px]">
                     <li>All products</li>
                     <li>T-Shirt</li>
                     <li>Hoodles</li>
-                    <li>Jackets</li>
+                    <li>jackets</li>
                 </ul>
-                <div className="bg-[#1E2832] px-4 py-2 text-[10px] text-[#fff] w-[80px] h-[30px] flex justify-center items-center cursor-pointer">
-                    filter
+                <div>
+
                 </div>
             </div>
             {/* Product Grid */}

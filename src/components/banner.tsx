@@ -14,8 +14,12 @@ export default function Banner() {
                         <span className="text-[20px] text-[#fff] px-[10px]">Shop Now</span>
                     </div>
                 </div>
-                <div>
-                    <img src="logo-header.jpg" alt="" className="w-full h-full object-cover border-r-[10px] border-[#E0E0E0]" />
+                <div className="overflow-hidden bg-[#f5f5f5] rounded-[60px_0_120px_0]">
+                    <img
+                        src="logo-header.jpg"
+                        alt=""
+                        className="w-full h-full object-cover"
+                    />
                 </div>
             </div>
         </div>
